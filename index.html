@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                display: flex;
+            }
+
+            div {
+                display: grid;
+            }
+
+            img {
+                width: 45vw;
+                max-width: 50vh;
+            }
+
+            #transparency1, #transparency2 {
+                width:100%;
+            }
+        </style>
+        <script type="module" src="index.js"></script>
+    </head>
+    <body>
+        <div>
+            <span>image 1 <input type="number" placeholder="transparency percentage" min="1" max="100" id="transparency1"> <input type="file" id="image1"></span>
+            
+            <img id="image1img">
+        </div>
+        <div>
+            <span>image 2 <input type="number" placeholder="transparency percentage" min="1" max="100" id="transparency2"/> <input type="file" id="image2"></span>
+            <img id="image2img">
+        </div>
+        <div>
+            result
+            <img id="result">
+        </div>
+    </body>
+</html>
