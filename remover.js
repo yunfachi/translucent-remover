@@ -1,5 +1,5 @@
 function f(c1,c2,p1,p2) { 
-    return c1 + (c2-c1)*p1/(p1==p2*2 ? p2 : (p1-p2));
+    return c1 - (p1 * (c1 - c2)) / (p1 - p2);
 }
 
 export async function processImages(image1, image2, transparency1, transparency2) {
